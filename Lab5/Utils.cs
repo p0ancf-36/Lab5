@@ -9,11 +9,6 @@ public static class Utils
         return (x % m + m) % m;
     }
 
-    public static void ClearLine()
-    {
-        Console.Write($"\r{new string(' ', Console.BufferWidth)}\r");
-    }
-
     public static void Clear(ConsolePosition from, ConsolePosition to)
     {
         GoTo(from);
