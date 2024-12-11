@@ -16,7 +16,7 @@ public static class Input
     
     public static int ReadLength(string label = "")
     {
-        return ReadIntegerGeneralized(0, int.MaxValue, label, Message.WrapTryAgain(Message.NanInteger),
+        return ReadIntegerGeneralized(1, int.MaxValue, label, Message.WrapTryAgain(Message.NanInteger),
             Message.WrapTryAgain(Message.LengthOverflow));
     }
 

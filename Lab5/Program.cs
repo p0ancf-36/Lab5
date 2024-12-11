@@ -322,10 +322,10 @@ public static partial class Program
         }
     }
 
-    [GeneratedRegex("^([\\sA-Za-zА-Яа-я,;:]+[.?!])+$")]
+    [GeneratedRegex("^([\\s0-9A-Za-zА-Яа-я,;:]+[.?!])+$")]
     private static partial Regex StringRegex();
 
-    [GeneratedRegex("[.?!,;:\\s]{2,}")]
+    [GeneratedRegex("[.?!,;:]{2,}|\\s{2,}")]
     private static partial Regex TooManySpaces();
 
     #endregion
