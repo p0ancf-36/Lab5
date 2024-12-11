@@ -58,7 +58,7 @@ public static partial class Program
                     matrix = CreateMatrix();
                     break;
                 case Ids.AddRowToMatrix:
-                    matrix = AddColumn(matrix);
+                    matrix = AddRow(matrix);
                     break;
                 case Ids.PrintJaggedArray:
                     PrintJaggedArray(jaggedArray);
@@ -126,7 +126,7 @@ public static partial class Program
         return result;
     }
 
-    private static int[,] AddColumn(int[,] array)
+    private static int[,] AddRow(int[,] array)
     {
         int[,] result = new int[array.GetLength(0) + 1, array.GetLength(1)];
         Array.Copy(array, result, array.Length);
